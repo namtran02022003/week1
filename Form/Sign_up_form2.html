@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Sign_up_form2.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center py-2">Sign Up</h1>
+        <hr class="form-hr">
+        <form id="my-form">
+            <div class="my-form-input">
+                <span class="err-message"></span>
+                <label for="name">Username:<span class="color-red">*</span></label>
+                <input class="form-values" id="name" type="text" name="name" placeholder="Enter name" />
+            </div>
+            <div class="my-form-input">
+                <span class="err-message"></span>
+                <label for="email">Email:<span class="color-red">*</span></label>
+                <input class="form-values" id="email" type="email" name="email" placeholder="Enter email" />
+            </div>
+            <div class="my-form-input">
+                <span class="err-message"></span>
+                <label for="password">Password:<span class="color-red">*</span></label>
+                <input class="form-values" id="password" type="password" name="password" placeholder="Enter password" />
+            </div>
+            <div class="my-form-input">
+                <label>Gender:</label>
+                <div class="d-flex my-2">
+                    <span class="item-radio">
+                        <input id="female" checked="true" class="form-values" name="gender" value="female"
+                            type="radio" />Female</span>
+                    <span class="item-radio">
+                        <input id="male" class="form-values" name="gender" value="male" type="radio" />Male</span>
+                </div>
+            </div>
+            <div class="my-form-input">
+                <span class="err-message"></span>
+                <label for="date">Date of Birth:<span class="color-red">*</span></label>
+                <input class="form-values" id="date" name="date" type="date" />
+            </div>
+            <div class="my-form-input">
+                <span class="err-message"></span>
+                <label for="phone">Phone number:<span class="color-red">*</span></label>
+                <input class="form-values" type="text" name="phoneNumber" id="phone" placeholder="Enter Phone number" />
+            </div>
+            <div class="my-form-input">
+                <span class="err-message"></span>
+                <label for="address">Address:<span class="color-red">*</span></label>
+                <select type="select-one" class="form-values" id="address" name="address">
+                    <option value="">-Address-</option>
+                    <option value="hanoi">Hà Nội</option>
+                    <option value="haiphong">Hải Phòng</option>
+                    <option value="thanhhoa">Thanh Hóa</option>
+                </select>
+            </div>
+            <div class="my-form-input">
+                <span class="err-message"></span>
+                <label for="description">Description</label>
+                <textarea type="textarea" class="form-values" id="description" name="description"></textarea>
+            </div>
+            <div class="btn my-3 d-flex">
+                <button id="btn-submit" onclick="HandleSubmit()" type="button">Submit</button>
+                <button id="btn-update" disabled type="button">Update</button>
+            </div>
+        </form>
+
+    </div>
+    <div id="root"></div>
+    <script type="text/javascript" src="Sign_up_form2.js"></script>
+</body>
+
+</html>

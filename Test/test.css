@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center
+}
+
+.header-top-item {
+    display: block;
+    padding: 5px 10px
+}
+
+.header-top {
+    padding: 5px 10px
+}
+
+.header-bottom {
+
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+
+}
+
+.header-bottom-item {
+    font-weight: 600;
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-bottom-item:hover {
+    background: green;
+    color: black;
+}
+
+.slide-content {
+    position: relative;
+}
+
+.slide-content-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.text-slide-content-btn {
+    border: none;
+    padding: 10px 15px;
+    background: rgb(255, 102, 0);
+    color: #fff;
+}
+
+.pre,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 17px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    background: rgba(132, 139, 148,0.5);
+    color: #fff;
+    cursor: pointer;
+}
+
+.pre {
+    left: 5%;
+}
+
+.next {
+    right: 5%;
+}
+
+.products {
+    width: 33.333%;
+    padding: 20px;
+    margin:10px 0
+}
+
+.content-products {
+    flex-wrap: wrap;
+}
+
+.product-img {
+    text-align: center;
+}
+
+.border {
+    border: 1px solid #a59e9e
+}
+.border-left{
+    border-left: 1px solid #a59e9e
+}
+
+.product-img-content {
+    width: 80%;
+    margin: auto;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.btn-view {
+    border: 1px solid rgb(80, 79, 87);
+    background: #fff;
+    color: rgb(128, 127, 161);
+    width: 50%;
+    padding: 10px 0;
+    margin: 10px 0 0 0;
+    border-radius: 2px;
+    box-shadow: 0 .125rem .25rem rgba(31, 29, 29, 0.075);
+    cursor: pointer;
+}
+
+.product-content {
+    padding: 0 50px;
+}
+
+.product-option-checkbox {
+    width: 50%;
+}
+
+.product-option {
+    padding: 0 20px;
+    background: rgb(237, 237, 237);
+}
+
+.product-option-checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.product-option-checkbox p {
+    display: flex;
+    align-items: center;
+}
+
+.product-name {
+    font-size: 1.3rem;
+    color: rgb(29, 77, 145);
+    min-height: 50px;
+}
+
+.content-text {
+    color: rgb(58, 82, 104);
+    font-size: 1.1rem;
+}
+
+.content-text h3 {
+    color: #333;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.product-sale {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 3px 15px;
+    background: rgb(19, 167, 107);
+    color: #fff;
+    margin: 2px 2px 0 0;
+}
+
+i {
+    margin: 0 3px !important;
+}
+
+.carts {
+    background: rgb(255, 102, 0);
+    padding: 10px;
+    color: #fff;
+}
+
+.header-item-phone {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width:1024px) {
+    .products {
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    .product-name {
+        font-size: 1.2rem;
+    }
+
+    .product-content {
+        padding: 0 10px
+    }
+
+    .btn-view {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:740px) {
+    .slide-content-text {
+        font-size: 0.7rem
+    }
+
+    .next,
+    .pre {
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .text-slide-content-btn {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+    }
+    .header-bottom{
+        display: none;
+    }
+    .header-bottom-item{
+        font-size: 0.8rem;
+    }
+    .header-top-item-right, .header-top-item-left{
+        display: none;
+    }
+    .header-top-menu{
+        
+        display: flex !important;
+        align-items: center;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .header-top{
+        justify-content: space-around;
+    }
+}
+.header-top-menu{
+    display: none;
+}
+.start i{
+    color: yellow;
+}
+.content-text-bottom{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.header-bottom-item a{
+    text-decoration: none;
+    color: #fff;
+}

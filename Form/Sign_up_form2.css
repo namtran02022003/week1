@@ -1,0 +1,197 @@
+.container {
+  border-radius: 5px;
+  max-width: 450px;
+  padding: 0 20px;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+body {
+  background-color: #f7efef;
+}
+
+.text-center {
+  text-align: center
+}
+
+#my-form {
+  padding: 15px 0;
+
+}
+
+label {
+  display: block;
+}
+
+#name,
+#email,
+#password,
+#phone,
+#description,
+#date,
+#address {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 10px 15px;
+  border-radius: 4px;
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+input:focus-within,
+select:focus-within,
+textarea:focus-within {
+  outline: 0.5px solid #d1cbcb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+label {
+  margin: 25px 0 5px 0;
+  font-weight: 600;
+  font-size: 17px;
+  color: #333;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item-radio input {
+  position: relative;
+  top: 5px;
+  right: 3px;
+}
+
+input[type="radio"]:focus-within,
+input[type="checkbox"]:focus-within {
+  outline: 0px;
+}
+
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin: 0 5px
+}
+
+.my-2 {
+  margin: 10px 0;
+}
+
+.btn button {
+  padding: 10px 25px;
+  width: 40%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(71, 143, 71);
+}
+
+.form-hr {
+  opacity: 0.5;
+}
+
+#btn-submit:hover:enabled {
+  background-color: green;
+  color: #fff;
+}
+
+#btn-update:hover:enabled {
+  background-color: rgb(29, 105, 29);
+  color: #fff;
+}
+
+#btn-update:not(.nohover) {
+  background-color: rgb(191, 204, 191);
+}
+
+.my-3 {
+  margin: 15px 0;
+}
+
+.color-red {
+  color: red
+}
+
+option {
+  font-size: 15px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #afa4a4;
+  border-collapse: collapse;
+  text-align: center;
+  padding: 5px 10px
+}
+
+table {
+  background: #fff;
+  margin: 30px auto;
+  padding: 15px;
+
+}
+
+.my-form-input {
+  position: relative;
+}
+
+.err-message {
+  position: absolute;
+  top: 101%;
+  left: 0;
+  z-index: 222;
+  color: #e40f0f;
+}
+
+th {
+  width: 130px;
+}
+
+.btn-remove,
+.btn-edit {
+  border: 1px solid #ccc;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 5px;
+}
+
+.btn-remove {
+  background-color: rgb(202, 11, 68);
+  color: #fff
+}
+
+.btn-edit {
+  background-color: rgb(89, 184, 113);
+
+}
+
+textarea {
+  max-width: 100%;
+  max-height: 100px;
+  min-height: 100px;
+  min-width: 100%;
+}
+
+.py-2 {
+  padding: 15px 0
+}
+
+select {
+  background-color: #fff;
+}
